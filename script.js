@@ -22,6 +22,10 @@ function timing() {
         else {
             clearInterval(timeint);
             document.getElementById("bottompanel").innerHTML = "<h1>Game Over</h1>";
+            setTimeout(function () {
+                window.location.reload();
+            }, 5000);
+
         }
     }, 1000);
 
